@@ -1,0 +1,46 @@
+## para git
+alias ga="git add .
+        git status"
+alias gcm="git commit -m "$1""
+alias gpl="git pull"
+alias gps="git push"
+alias gl="git log"
+alias gch="git checkout"
+alias gs="git status"
+
+## para yarn
+alias ys="yarn start"
+alias yl="yarn lint"
+alias yi="yarn install"
+alias ya="yarn add "
+alias yr="yarn remove "
+
+## para diretorios
+alias my="p && cd my"
+alias co="p && cd cosm"
+alias p="cd $HOME/Documents/projects"
+alias cc="p && cd caju-code"
+
+## para programas
+alias c="code ."
+
+## para python
+alias venv:a="source .venv/bin/activate"
+alias venv:d="deactivate"
+alias venv:c="python3 -m venv .venv && source .venv/bin/activate && pip install pip --upgrade"
+
+
+## misc
+alias zsh="vi ~/.zshrc"
+alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+alias tree:f="find . | sed -e \"s/[^-][^\/]*\// |/g\" -e \"s/|\([^ ]\)/|-\1/\""
+alias pip="pip3"
+
+## para docker
+alias up="docker compose up"
+alias down="docker compose down"
+alias docker-clean="docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -a -q) --force"
+
+
+alias cat='bat --paging=never'
+
